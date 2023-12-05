@@ -1,0 +1,93 @@
+<section id="experiences">
+  <div class="ribbon bottom">Expériences</div>
+
+  <mat-card-list>
+    <mat-card *ngFor="let experience of experiences">
+      <mat-card-header>
+        <mat-card-title>{{ experience.title }}</mat-card-title>
+        <mat-card-subtitle>{{ experience.subtitle }}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        {{ experience.content }}
+      </mat-card-content>
+      <!--S<mat-card-actions>
+        <button mat-button>Voir les environnements techniques</button>
+      </mat-card-actions>
+    -->
+    </mat-card>
+  </mat-card-list>
+
+
+<!--
+
+<div class="example-action-buttons">
+    <button mat-button (click)="accordion.openAll()">Expand All</button>
+    <button mat-button (click)="accordion.closeAll()">Collapse All</button>
+  </div>
+  <mat-accordion class="example-headers-align" multi>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          data ingénieur - 2022 / 2023
+        </mat-panel-title>
+        <mat-panel-description>
+          IFDIS
+          <mat-icon matBadge="15" matBadgeColor="warn">home</mat-icon>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+  
+      
+        La mise en place d'un data hub sport permettant de collecter, traiter et analyser des données  
+          sportives afin d'identifier les facteurs clés influençant les performances et la sécurité 
+          des sportifs.s
+          Les objectifs principaux :
+          Aider les entraîneurs, les gestionnaires et les sportifs à prendre des décisions éclairées.
+          Améliorer les performances et la sécurité des sportifs.
+          Collecter des données provenant de diverses sources, telles que les capteurs IoT, les plateformes de sport.
+          Identifier les facteurs clés influençant les performances et la sécurité des sportifs.
+          Prédire les performances et la sécurité des sportifs à l'aide de l'apprentissage automatique.
+
+  
+      <mat-form-field>
+        <mat-label>Age</mat-label>
+      </mat-form-field>
+  
+    </mat-expansion-panel>
+    <mat-expansion-panel disabled>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Destination
+        </mat-panel-title>
+        <mat-panel-description>
+          Type the country name
+          <mat-icon>map</mat-icon>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+  
+      <mat-form-field>
+        <mat-label>Country</mat-label>
+        <input matInput>
+      </mat-form-field>
+    </mat-expansion-panel>
+  
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Day of the trip
+        </mat-panel-title>
+        <mat-panel-description>
+          Inform the date you wish to travel
+          <mat-icon>date_range</mat-icon>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+  
+      <mat-form-field>
+        <mat-label>Date</mat-label>
+        <input matInput [matDatepicker]="picker" (focus)="picker.open()" readonly>
+      </mat-form-field>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-expansion-panel>
+  </mat-accordion>
+  -->  
+</section>
+  
