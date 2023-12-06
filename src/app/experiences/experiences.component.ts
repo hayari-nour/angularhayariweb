@@ -1,4 +1,4 @@
-import {CUSTOM_ELEMENTS_SCHEMA, Component, ViewChild} from '@angular/core';
+import {CUSTOM_ELEMENTS_SCHEMA, Component, ViewChild, ViewEncapsulation} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {MatAccordion, MatExpansionModule} from '@angular/material/expansion';
 import {MatDatepickerModule} from '@angular/material/datepicker';
@@ -17,6 +17,7 @@ import {MatCardModule} from '@angular/material/card';
   selector: 'app-experiences',
   templateUrl: './experiences.component.html',
   styleUrls: ['./experiences.component.css'],
+  encapsulation: ViewEncapsulation.None,
   standalone: true,
   imports: [
     CommonModule,

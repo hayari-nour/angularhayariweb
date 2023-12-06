@@ -116,17 +116,31 @@
   }
 
 
+table.mat-elevation-z8 th.mat-header-cell {
+    background-color: black;
+    color: white;
+  }
 
+ table.mat-elevation-z8 tr.mat-header-row {
+    background-color: black; 
+    color: white;
+  }
+ 
 
+table.mat-elevation-z8 td.mat-header-cell {
+    background-color: black; 
+    color: white;
+  }
+  
+table.mat-elevation-z8 tr.mat-row {
+    /*border-bottom: 2px solid #2980b9;*/
+     color:black;
+  }
 
-
-
-
-  /**********************/
-  .mat-mdc-row:nth-child(even) {
-    background-color: #f1f1f1; /* Set the background color for even rows */
+ .mat-mdc-row:nth-child(even) {
+    background-color: #f1f1f1; 
   }
   
   .mat-mdc-row:nth-child(odd) {
-    background-color: #ffffff; /* Set the background color for odd rows */
+    background-color: #ffffff; 
   }

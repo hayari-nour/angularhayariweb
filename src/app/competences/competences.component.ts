@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-/*import {MatTabsModule} from '@angular/material/tabs';*/
+import { Component, ViewEncapsulation } from '@angular/core';
 import {MatTableDataSource, MatTableModule} from '@angular/material/table';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
@@ -23,9 +22,9 @@ const ELEMENT_DATA: PeriodicElement[] = [
   selector: 'app-competences',
   standalone:true,
   imports: [MatFormFieldModule, MatInputModule, MatTableModule],
-  /*imports: [MatTabsModule],*/
   templateUrl: './competences.component.html',
-  styleUrls: ['./competences.component.css']
+  styleUrls: ['./competences.component.css'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class CompetencesComponent {
 

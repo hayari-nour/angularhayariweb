@@ -12,15 +12,18 @@ import { PartnersComponent } from './partners/partners.component';
 import { CertificatsComponent } from './certificats/certificats.component';
 import { FormationsComponent } from './formations/formations.component';
 import { CompetencesComponent } from './competences/competences.component';
+import { PdfDownloadComponent } from './pdf-download/pdf-download.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     AppRoutingModule,
     ExperienceComponent,
     FooterComponent,
@@ -29,7 +32,8 @@ import { CompetencesComponent } from './competences/competences.component';
     PartnersComponent,
     CertificatsComponent,
     FormationsComponent,
-    CompetencesComponent
+    CompetencesComponent,
+    PdfDownloadComponent
 
   ],
   providers: [],
