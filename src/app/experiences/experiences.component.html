@@ -1,8 +1,7 @@
 <section id="experiences">
   <div class="ribbon bottom">Expériences</div>
-
-  <mat-card-list>
-    <mat-card *ngFor="let experience of experiences">
+<mat-card-list>
+  <mat-card *ngFor="let experience of experiences">
       <mat-card-header>
         <mat-card-title>{{ experience.title }}</mat-card-title>
         <mat-card-subtitle>{{ experience.subtitle }}</mat-card-subtitle>
@@ -10,13 +9,11 @@
       <mat-card-content>
         {{ experience.content }}
       </mat-card-content>
-      <!--S<mat-card-actions>
+      <mat-card-actions>
         <button mat-button>Voir les environnements techniques</button>
       </mat-card-actions>
-    -->
-    </mat-card>
-  </mat-card-list>
-
+     </mat-card>
+</mat-card-list>
 
 <!--
 
@@ -90,4 +87,3 @@
   </mat-accordion>
   -->  
 </section>
-  

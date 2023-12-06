@@ -1,0 +1,32 @@
+
+table.mat-elevation-z8 th.mat-header-cell {
+    background-color: black;
+    color: white;
+  }
+
+  /* Styles pour l'en-tête du tableau */
+  table.mat-elevation-z8 tr.mat-header-row {
+    background-color: black; /* Couleur de fond de l'en-tête */
+    color: white;
+  }
+  
+/* Styles pour les cellules de l'en-tête */
+table.mat-elevation-z8 td.mat-header-cell {
+    background-color: black; /* Couleur de fond de l'en-tête */
+    color: white;
+  }
+
+  
+  /*table.mat-elevation-z8 td.mat-cell {
+    background-color: silver;
+    color:black;
+  }
+*/
+ 
+  /* Styles pour toutes les lignes du tableau */
+  table.mat-elevation-z8 tr.mat-row {
+    /*border-bottom: 2px solid #2980b9;*/
+ 
+    color:black;
+  }
+

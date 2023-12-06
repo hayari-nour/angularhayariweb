@@ -16,8 +16,7 @@ import { CompetencesComponent } from './competences/competences.component';
 
 @NgModule({
   declarations: [
-    AppComponent
-    
+    AppComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,7 +29,8 @@ import { CompetencesComponent } from './competences/competences.component';
     PartnersComponent,
     CertificatsComponent,
     FormationsComponent,
-    CompetencesComponent,
+    CompetencesComponent
+
   ],
   providers: [],
   bootstrap: [AppComponent]

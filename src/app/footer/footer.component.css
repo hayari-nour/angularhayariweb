@@ -10,7 +10,7 @@
     vertical-align: middle;
   }
   .footer p{
-      margin: 10px 0px ;
+
       color: rgb(128, 128, 128);
   }
 
@@ -19,14 +19,14 @@
     color: rgb(30, 255, 0);
   }
   
-
+/*
 .marquee-rtl {
-    max-width: 30em;                      /* largeur de la fenêtre */
+    max-width: 30em;                      
     margin: 1em auto 2em;
     border: 10px solid #F0F0FF;
-    overflow: hidden;                     /* masque tout ce qui dépasse */
+    overflow: hidden;                     
     box-shadow: 0 .25em .5em #CCC,inset 0 0 1em .25em #CCC;
-  }
+  }*/
 
  .footer > :first-child {
     display: inline-block;
@@ -41,7 +41,7 @@
  .msg {
     font-size: 1.5em;
       line-height: 2em;
-    }
+   }
   
 @keyframes defilement-rtl {
         0% {

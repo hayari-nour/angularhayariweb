@@ -1,4 +1,5 @@
-import {Component, ViewChild} from '@angular/core';
+import {CUSTOM_ELEMENTS_SCHEMA, Component, ViewChild} from '@angular/core';
+import { CommonModule } from '@angular/common';
 import {MatAccordion, MatExpansionModule} from '@angular/material/expansion';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatInputModule} from '@angular/material/input';
@@ -6,6 +7,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatNativeDateModule} from '@angular/material/core';
+import {MatCardModule} from '@angular/material/card';
+
 
 /**
  * @title Accordion with expand/collapse all toggles
@@ -16,6 +19,7 @@ import {MatNativeDateModule} from '@angular/material/core';
   styleUrls: ['./experiences.component.css'],
   standalone: true,
   imports: [
+    CommonModule,
     MatButtonModule,
     MatExpansionModule,
     MatIconModule,
@@ -23,8 +27,9 @@ import {MatNativeDateModule} from '@angular/material/core';
     MatInputModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    
+    MatCardModule,
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],  
 })
 export class ExperienceComponent {
   @ViewChild(MatAccordion) accordion: MatAccordion= new MatAccordion();

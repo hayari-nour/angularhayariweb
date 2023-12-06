@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import {MatTableDataSource, MatTableModule} from '@angular/material/table';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
@@ -20,7 +20,8 @@ const ELEMENT_DATA: CertificatsElement[] = [
   standalone:true,
   imports: [MatFormFieldModule, MatInputModule, MatTableModule],
   templateUrl: './certificats.component.html',
-  styleUrls: ['./certificats.component.css']
+  styleUrls: ['./certificats.component.css'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class CertificatsComponent {
 

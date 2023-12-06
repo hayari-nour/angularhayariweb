@@ -1,27 +1,23 @@
-.partner-logos__title {
-    color: blue;
-}
-
 .partner-logo {
     max-width: 150px;
     height: 70px;
 }
-
-.partner-logo+.partner-logo {
-    margin-left: 10px;
+.partner {
+    margin-bottom: 7%;
+}
+.partner-logo {
+    margin-left: 15px;
 }
 
 .box {
-    /*border: 1px dashed grey;*/
+  /* border: 1px dashed grey;*/
     padding: 12px;
 }
 
 .cf:before,
 .cf:after {
     content: " ";
-    /* 1 */
     display: table;
-    /* 2 */
 }
 
 .cf:after {
@@ -49,52 +45,53 @@
     white-space: nowrap;
 }
 
+/*.rebond img {
+    height: 70px;
+    width: auto;
+}
+*/
+
 .item {
     -webkit-animation: rebond 2s cubic-bezier(0.05, 0, 0.2, 1) infinite alternate;
     animation: rebond 2s cubic-bezier(0.05, 0, 0.2, 1) infinite alternate;
-    display: inline-block;
-    transform: translate3d(0, 0, 0);
-    margin-top: 1em;
-    text-shadow: rgba(0, 0, 0, 0.4) 0 0 0.05em;
-    font: normal bold 6rem "Product Sans", sans-serif;
+    /*display: inline-block;*/
+    /*transform: translate3d(0, 0, 0);*/
+    /*margin-top: 1em;*/
+    /*text-shadow: rgba(0, 0, 0, 0.4) 0 0 0.05em;*/
+    /*font: normal bold 6rem "Product Sans", sans-serif;*/
 }
 
 
 .item:nth-child(1) {
     -webkit-animation-delay: 0s;
     animation-delay: 0s;
-    color: #4285f4;
 }
 
 .item:nth-child(2) {
     -webkit-animation-delay: 0.2s;
     animation-delay: 0.2s;
-    color: #ea4335;
 }
 
 .item:nth-child(3) {
     -webkit-animation-delay: 0.4s;
     animation-delay: 0.4s;
-    color: #fbbc05;
 }
 
 .item:nth-child(4) {
     -webkit-animation-delay: 0.6s;
     animation-delay: 0.6s;
-    color: #4285f4;
 }
 
 .item:nth-child(5) {
     -webkit-animation-delay: 0.8s;
     animation-delay: 0.8s;
-    color: #34a853;
 }
 
 .item:nth-child(6) {
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
-    color: #ea4335;
 }
+
 
 @-webkit-keyframes rebond {
     0% {
@@ -103,7 +100,7 @@
     }
 
     100% {
-        transform: translate3d(0, -1em, 0);
+        transform: translate3d(1em, 0, 0);
         text-shadow: rgba(0, 0, 0, 0.4) 0 1em 0.35em;
     }
 }
@@ -115,7 +112,7 @@
     }
 
     100% {
-        transform: translate3d(0, -1em, 0);
+        transform: translate3d(1.3em, 0, 0);
         text-shadow: rgba(0, 0, 0, 0.4) 0 1em 0.35em;
     }
 }
