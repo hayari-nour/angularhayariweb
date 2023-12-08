@@ -1,4 +1,4 @@
-import {CUSTOM_ELEMENTS_SCHEMA, Component, ViewChild, ViewEncapsulation} from '@angular/core';
+import {CUSTOM_ELEMENTS_SCHEMA, Component} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {MatAccordion, MatExpansionModule} from '@angular/material/expansion';
 import {MatDatepickerModule} from '@angular/material/datepicker';
@@ -8,7 +8,9 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatNativeDateModule} from '@angular/material/core';
 import {MatCardModule} from '@angular/material/card';
-
+import { ViewChild } from '@angular/core';
+import { ExperienceService } from './experience.service';
+import { Experience } from './experience.model';
 
 /**
  * @title Accordion with expand/collapse all toggles
@@ -33,9 +35,25 @@ import {MatCardModule} from '@angular/material/card';
   schemas: [CUSTOM_ELEMENTS_SCHEMA],  
 })
 export class ExperienceComponent {
-  @ViewChild(MatAccordion) accordion: MatAccordion= new MatAccordion();
+  //panelOpenState = false;
+  //@ViewChild(MatAccordion) accordion: MatAccordion;
+  @ViewChild(MatAccordion) accordion!: MatAccordion;
+  experiences: Experience[] = [];
 
-  experiences = [
+  constructor(private experienceService: ExperienceService) {}
+
+  ngOnInit(): void {
+    this.experiences = this.experienceService.getExperiences();
+  }
+
+  toggleDetails(experience: Experience): void {
+    experience.showDetails = !experience.showDetails;
+  }
+
+
+
+
+  experiencesold = [
     {
       title: "Développeur web",
       subtitle: "2022 - Present",

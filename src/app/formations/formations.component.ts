@@ -10,11 +10,11 @@ export interface FormationsElement {
 }
 
 const ELEMENT_DATA: FormationsElement[] = [
-{date: '2012', formation: 'Développeur en environnement Microsoft .NET / SHAREPOINT (45 jours)', lieu:'FITEC,Paris'},
-{date: '2007/2008', formation: 'Développeur JAVA/J2EE (4 mois)', lieu:'Cyberlog,Paris'},
-{date: '2006', formation: 'Doctorat en Informatique/mathématiques appliquées :Cartes auto-organisatrices et approche évolutionniste pour les problèmes de tournées de véhicules avec regroupements Réf:https://www.theses.fr/2005BESA2012', lieu:'UTBM,Belfort'},
-{date: '2005', formation: 'Master Sciences, mention Mathématiques à finalité professionnelle', lieu:'ULP,Strasbourg'},
-{date: '2000', formation: 'DEA recherche opérationnelle, combinatoire et optimisation', lieu:'INPG,Grenoble'},
+{date: '2012', formation: 'Développeur en environnement Microsoft .NET / SHAREPOINT (45 jours)', lieu:'FITEC, Paris'},
+{date: '2007 - 2008', formation: 'Développeur JAVA/J2EE (4 mois)', lieu:'Cyberlog, Paris'},
+{date: '2006', formation: 'Doctorat en Informatique/mathématiques appliquées :Cartes auto-organisatrices et approche évolutionniste pour les problèmes de tournées de véhicules avec regroupements Réf:https://www.theses.fr/2005BESA2012', lieu:'UTBM, Belfort'},
+{date: '2005', formation: 'Master Sciences, mention Mathématiques à finalité professionnelle', lieu:'ULP, Strasbourg'},
+{date: '2000', formation: 'DEA recherche opérationnelle, combinatoire et optimisation', lieu:'INPG, Grenoble'},
 ];
 @Component({
   selector: 'app-formations',

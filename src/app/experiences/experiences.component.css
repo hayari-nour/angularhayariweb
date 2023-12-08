@@ -1,10 +1,52 @@
 
 @import url(../../assets/styles/tablestyle.css);
 
+
+.example-action-buttons {
+  padding-bottom: 20px;
+}
+
+.example-headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.example-headers-align .mat-mdc-form-field + .mat-mdc-form-field {
+  margin-left: 8px;
+}
+
+
+/* experience.component.css */
+img {
+  width: 30px; /* Ajustez selon vos besoins */
+  height: 30px; /* Ajustez selon vos besoins */
+  margin-right: 10px; /* Ajustez selon vos besoins */
+}
+
+div {
+  cursor: pointer;
+  margin-bottom: 10px; /* Ajustez selon vos besoins */
+}
+
+div span {
+  font-weight: bold;
+}
+
+div p {
+  margin-top: 5px; /* Ajustez selon vos besoins */
+}
+
+
+
+
+
+/*
 .example-action-buttons {
     padding-bottom: 20px;
   }
-  
+
+
+
   .example-headers-align .mat-expansion-panel-header-description {
     justify-content: space-between;
     align-items: center;
@@ -17,7 +59,6 @@
 
 
 
-  /* card */
   .mat-card {
     margin-bottom: 20px;
   }
@@ -41,3 +82,5 @@
   .mat-card-actions {
     text-align: right;
   }
+
+  */
