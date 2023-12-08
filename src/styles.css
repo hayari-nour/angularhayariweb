@@ -1,3 +1,9 @@
+
+/*@import '@angular/material/prebuilt-themes/purple-green.css';*/
+
+/*@angular/material/prebuilt-themes/indigo-pink.css*/
+
+/*
 :host {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 14px;
@@ -24,8 +30,8 @@
   .spacer {
     flex: 1;
   }
-
-  .toolbar {
+*/
+  .toolbarbis {
     position: absolute;
     top: 0;
     left: 0;
@@ -39,22 +45,22 @@
     box-shadow: 0 10px 40px blue;
   }
 
-  .toolbar img {
+  .toolbarbis img {
     margin: 0 16px;
   }
 
-  .toolbar #twitter-logo {
+  .toolbarbis #twitter-logo {
     height: 40px;
     margin: 0 8px;
   }
 
-  .toolbar #github-logo {
+  .toolbarbis #github-logo {
     height: 40px;
     margin: 0 16px;
   }
 
-  .toolbar #twitter-logo:hover,
-  .toolbar #github-logo:hover {
+  .toolbarbis #twitter-logo:hover,
+  .toolbarbis #github-logo:hover {
     opacity: 0.8;
   }
 
@@ -66,81 +72,14 @@
    title before section
   */
 
-  .ribbon {
-    --r: 0.8em; /* control the cutout */
-    --c: #5ca2ed;
-    padding-inline: 1lh calc(var(--r) + 0.25em);
-    /*background: radial-gradient(at 0% 50%, white 15%,yellow 20%, orange 25%,gray 30%, black);*/
-    /*border-image: conic-gradient(var(--c) 0 0) fill 0 //20px;;*/
-    border-image: radial-gradient(
-      at 0% 50%,
-       white 15%,
-       yellow 20%,
-       orange 25%,
-       gray 30%,
-       black ) 
-       fill 0;
-       /*border-width: 50px;*/
+  body {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    margin: 0;
+    padding: 30px;
+    background: black;
   }
   
-  .bottom {
-    clip-path: polygon(
-      1lh 0,
-      100% 0,
-      calc(100% - var(--r)) 50%,
-      100% 100%,
-      1lh 100%,
-      1lh 9999px,
-      0 9999px,
-      0 100%
-    );
-  }
-  /* the 9999px is a very big value. Use what you want but make sure it's the same everywhere. If you use a small value you get another kind of ribbon without the infinite feature */
-  
-  @supports not (height: 1lh) {
-    .ribbon {
-      padding-inline: 1.7em calc(var(--r) + 0.25em);
-    }
-    .bottom {
-      clip-path: polygon(
-        1.7em 0,
-        100% 0,
-        calc(100% - var(--r)) 50%,
-        100% 100%,
-        1.7em 100%,
-        1.7em 9999px,
-        0 9999px,
-        0 100%
-      );
-    }
-  }
-
-
-table.mat-elevation-z8 th.mat-header-cell {
-    background-color: black;
-    color: white;
-  }
-
- table.mat-elevation-z8 tr.mat-header-row {
-    background-color: black; 
-    color: white;
-  }
- 
-
-table.mat-elevation-z8 td.mat-header-cell {
-    background-color: black; 
-    color: white;
+  html, body {
+    height: 100%;
   }
   
-table.mat-elevation-z8 tr.mat-row {
-    /*border-bottom: 2px solid #2980b9;*/
-     color:black;
-  }
-
- .mat-mdc-row:nth-child(even) {
-    background-color: #f1f1f1; 
-  }
-  
-  .mat-mdc-row:nth-child(odd) {
-    background-color: #ffffff; 
-  }

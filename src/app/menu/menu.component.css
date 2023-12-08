@@ -1,12 +1,12 @@
 .menu {
     position: fixed;
-    right: -7.0em;
+    /*right: -7.0em;*/
+    right: 0;
     top: 20%;
     width: 9em;
     margin: -3em 0 0 0;
     z-index: 5;
     background: #111;
-    /*background: conic-gradient(from 0.49turn at 50% 50%,gray,yellow,gray,white,gray);*/
     color: white;
     font-weight: bold;
     font-size: large;
@@ -16,23 +16,41 @@
     padding: 0.5em 0.5em 0.5em 2.5em;
     box-shadow: 0 10px 40px blue;
     border-radius: 3em 0em 0em 3em;
-    transition: 0.2s;
+    /*transition: 0.2s;*/
   }
   
   
-  .menu:hover { right: 0 }
-  .menu a { transition: 0.2s }
-  .menu:hover a:focus {
+ /* .menu:hover { right: 0 }*/
+  /*.menu a { transition: 0.2s }*/
+  /*.menu:hover a:focus {
     left: 0;
     background: none;
-  }
-  li {
+  }*/
+  /*li {
     display: list-item;
+  }*/
+ 
+  /*****/
+
+  .menu-item {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
   }
   
+  .menu-link {
+    display: flex; /* Utilisation de Flexbox pour aligner horizontalement */
+    align-items: center; /* Alignement vertical au centre */
+    text-decoration: none; /* Supprimer la soulignement du lien si nécessaire */
+    /*color: white; */
+    margin-left: -2em;
+  }
   
-  
-  
-  
+  .menu-text {
+        margin-left: 0.5em;
+  }
+  .no-marker-list {
+    list-style-type: none;
+  }
   
   

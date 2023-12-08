@@ -1,13 +1,12 @@
 <section id="certificats">
     <div class="ribbon bottom">Certificats</div>
 <mat-form-field>
-    <mat-label>recherche rapide</mat-label>
-    <input matInput (keyup)="applyFilter($event)" placeholder="..." #input>
+    <mat-label>filtre</mat-label>
+    <input matInput (keyup)="applyFilter($event)" placeholder="votre recherche" #input>
   </mat-form-field>
   
   <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
      <!-- domaine Column -->
-     
     <ng-container matColumnDef="date">
       <th mat-header-cell *matHeaderCellDef class="mat-header-cell"> Date </th>
       <td mat-cell *matCellDef="let element"  class="mat-cell"> {{element.date}} </td>

@@ -24,7 +24,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   imports: [MatFormFieldModule, MatInputModule, MatTableModule],
   templateUrl: './competences.component.html',
   styleUrls: ['./competences.component.css'],
-  encapsulation: ViewEncapsulation.None,
+  /*encapsulation: ViewEncapsulation.None,*/
 })
 export class CompetencesComponent {
 

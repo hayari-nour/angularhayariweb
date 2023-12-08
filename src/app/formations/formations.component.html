@@ -1,8 +1,8 @@
 <section id="formations">
     <div class="ribbon bottom">Formations</div>
 <mat-form-field>
-    <mat-label>recherche rapide</mat-label>
-    <input matInput (keyup)="applyFilter($event)" placeholder="..." #input>
+    <mat-label>filtre</mat-label>
+    <input matInput (keyup)="applyFilter($event)" placeholder="votre recherche" #input>
   </mat-form-field>
   
   <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">

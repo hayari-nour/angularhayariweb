@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import {MatIconModule} from '@angular/material/icon';
+import { MatIconRegistry } from "@angular/material/icon";
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-pdf-download',
@@ -10,17 +12,21 @@ import {MatIconModule} from '@angular/material/icon';
   styleUrls: ['./pdf-download.component.css']
 })
 export class PdfDownloadComponent {
-/*
-}
-@Component({
-  selector: 'app-pdf-download',
-  template: `
-    <button (click)="downloadPdf()">Télécharger le PDF</button>
-  `,
-})
-export class PdfDownloadComponent {
-  */
+
+  
   constructor(private http: HttpClient) {}
+    /*constructor(private http: HttpClient,
+      private matIconRegistry: MatIconRegistry,
+      private domSanitizer: DomSanitizer) {
+      this.matIconRegistry.addSvgIcon(
+        "download",
+        this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/images/downloadfile.svg")
+      );
+    }*/
+ 
+
+
+
 
   downloadPdf() {
     const pdfUrl = '/assets/cv_hayari.pdf'; // Remplacez 'fichier.pdf' par le nom de votre fichier

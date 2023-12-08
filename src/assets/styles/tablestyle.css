@@ -1,0 +1,65 @@
+table.mat-elevation-z8 th.mat-header-cell {
+    background-color:rgb(0, 0, 0);
+    color:  white;
+  }
+
+ table.mat-elevation-z8 tr.mat-header-row {
+    /*background-color: rgb(159, 92, 247);*/
+    color: white;
+  }
+ 
+
+table.mat-elevation-z8 td.mat-header-cell {
+    /*background-color: rgb(159, 92, 247);*/
+    color: white;
+  }
+  
+/*  
+table.mat-elevation-z8 tr.mat-row {
+      color: rgb(159, 92, 247);
+  }
+*/
+
+ .mat-mdc-row:nth-child(even) {
+    background-color: white; 
+  }
+  
+  .mat-mdc-row:nth-child(odd) {
+    background-color: silver; 
+  }
+
+
+
+  
+
+
+
+
+
+/* HTML: <div class="ribbon">Your text content</div> */
+.ribbon {
+    margin: 3%;
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+  }
+  .ribbon {
+    --r: .8em; /* control the cutout */
+    
+    border-block: .5em solid #0000;
+    padding-inline: .5em calc(var(--r) + .25em);
+    line-height: 1.8;
+    clip-path: polygon(100% 0,0 0,0 100%,100% 100%,calc(100% - var(--r)) calc(100% - .25em),100% 50%,calc(100% - var(--r)) .25em);
+    background:
+     radial-gradient(.2em 50% at left,#000a,#0000) border-box,
+     #45ADA8 padding-box; /* the color  */
+    /*width: fit-content;*/
+  }
+
+
+
+
+
+
+  

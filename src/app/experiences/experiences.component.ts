@@ -17,7 +17,7 @@ import {MatCardModule} from '@angular/material/card';
   selector: 'app-experiences',
   templateUrl: './experiences.component.html',
   styleUrls: ['./experiences.component.css'],
-  encapsulation: ViewEncapsulation.None,
+  /*encapsulation: ViewEncapsulation.None,*/
   standalone: true,
   imports: [
     CommonModule,

@@ -14,6 +14,7 @@ import { FormationsComponent } from './formations/formations.component';
 import { CompetencesComponent } from './competences/competences.component';
 import { PdfDownloadComponent } from './pdf-download/pdf-download.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ToolbarmenuComponent } from './toolbarmenu/toolbarmenu.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { HttpClientModule } from '@angular/common/http';
     CertificatsComponent,
     FormationsComponent,
     CompetencesComponent,
-    PdfDownloadComponent
+    PdfDownloadComponent,
+    ToolbarmenuComponent
 
   ],
   providers: [],

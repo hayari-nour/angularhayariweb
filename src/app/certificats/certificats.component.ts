@@ -21,7 +21,7 @@ const ELEMENT_DATA: CertificatsElement[] = [
   imports: [MatFormFieldModule, MatInputModule, MatTableModule],
   templateUrl: './certificats.component.html',
   styleUrls: ['./certificats.component.css'],
-  encapsulation: ViewEncapsulation.None,
+  /*encapsulation: ViewEncapsulation.None,*/
 })
 export class CertificatsComponent {
 
