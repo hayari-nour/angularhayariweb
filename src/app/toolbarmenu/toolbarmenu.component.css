@@ -1,4 +1,55 @@
-.example-spacer {
+.toolbarm-spacer {
     flex: 1 1 auto;
   }
+
   
+
+  .mat-toolbar{
+    background: rgb(141, 170, 228);
+    justify-content: center;
+   
+    background: #45ADA8 ; 
+
+
+  } 
+
+  ::ng-deep .mat-mdc-menu-content {
+    background: #45ADA8 !important;
+  } 
+  
+
+  /*mat-mdc-menu-item mat-mdc-focus-indicator*/
+  /*
+  ::ng-deep .mat-mdc-menu-panel {
+    background:gray;
+    padding: 0;
+    margin: 0;
+  } 
+
+  
+
+  ::ng-deep .mat-menu{
+    background: red;
+    margin: 0;
+  } 
+
+  
+
+  ::ng-deep .mat-mdc-menu-item  {
+    background: transparent;
+  } 
+
+  ::ng-deep .mat-menu-item {
+    color: blue !important;
+  }
+  button.mat-menu-item{
+      background-color: white;
+  }
+  button.mat-menu-item:hover {
+      background-color: blue;
+      color: #fff !important;
+  }
+
+*/
+
+

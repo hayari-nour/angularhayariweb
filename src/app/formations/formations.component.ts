@@ -2,6 +2,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
 import {MatTableDataSource, MatTableModule} from '@angular/material/table';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
 
 export interface FormationsElement {
   date: string;
@@ -19,7 +20,7 @@ const ELEMENT_DATA: FormationsElement[] = [
 @Component({
   selector: 'app-formations',
   standalone:true,
-  imports: [MatFormFieldModule, MatInputModule, MatTableModule],
+  imports: [MatFormFieldModule, MatInputModule, MatTableModule, MatIconModule],
   templateUrl: './formations.component.html',
   styleUrls: ['./formations.component.css'],
   /*encapsulation: ViewEncapsulation.None,*/

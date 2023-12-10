@@ -1,85 +1,26 @@
 
-/*@import '@angular/material/prebuilt-themes/purple-green.css';*/
 
-/*@angular/material/prebuilt-themes/indigo-pink.css*/
+@import '@angular/material/prebuilt-themes/indigo-pink';
+/*@import '@angular/material/prebuilt-themes/pink-bluegrey';
+@import '@angular/material/prebuilt-themes/deeppurple-amber';
+@import '@angular/material/prebuilt-themes/indigo-pink';
+@import '@angular/material/prebuilt-themes/purple-green';*/
 
-/*
-:host {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 14px;
-    color: #333;
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    background: rgb(234, 184, 184);
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 8px 0;
-  }
-
-  p {
-    margin: 0;
-  }
-
-  .spacer {
-    flex: 1;
-  }
-*/
-  .toolbarbis {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    background-color: #1976d2;
-    color: white;
-    font-weight: 600;
-    box-shadow: 0 10px 40px blue;
-  }
-
-  .toolbarbis img {
-    margin: 0 16px;
-  }
-
-  .toolbarbis #twitter-logo {
-    height: 40px;
-    margin: 0 8px;
-  }
-
-  .toolbarbis #github-logo {
-    height: 40px;
-    margin: 0 16px;
-  }
-
-  .toolbarbis #twitter-logo:hover,
-  .toolbarbis #github-logo:hover {
-    opacity: 0.8;
-  }
-
-
-
-
-
-  /*  
-   title before section
-  */
 
   body {
     font-family: Roboto, "Helvetica Neue", sans-serif;
     margin: 0;
     padding: 30px;
-    background: rgb(68, 102, 162);
+    /*background:#E3F2FD;*/
+    /*background-color: #1565C0;
+    color: #fff; 
+    */
+    
+    background-color: #87CEEB; 
+    color: #F5F5DC; 
   }
   
   html, body {
     height: 100%;
   }
-  
+ 

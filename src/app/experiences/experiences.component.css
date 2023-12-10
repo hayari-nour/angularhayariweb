@@ -2,16 +2,16 @@
 @import url(../../assets/styles/tablestyle.css);
 
 
-.example-action-buttons {
+.exp-action-buttons {
   padding-bottom: 20px;
 }
 
-.example-headers-align .mat-expansion-panel-header-description {
+.exp-headers-align .mat-expansion-panel-header-description {
   justify-content: space-between;
-  align-items: center;
+  align-items: left;
 }
 
-.example-headers-align .mat-mdc-form-field + .mat-mdc-form-field {
+.exp-headers-align .mat-mdc-form-field + .mat-mdc-form-field {
   margin-left: 8px;
 }
 
@@ -38,7 +38,64 @@ div p {
 
 
 
+/*** chatgpt****/
+/* Ajoutez ces styles dans votre fichier CSS global ou dans le composant spécifique si nécessaire */
 
+/* Style de l'accordéon */
+.mat-expansion-panel {
+  margin-bottom: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* En-tête de l'accordéon */
+.mat-expansion-panel-header {
+  background-color: #2196F3; /* Couleur de fond de l'en-tête */
+  color: #fff; /* Couleur du texte de l'en-tête */
+  padding: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.mat-expansion-panel-header:hover {
+  background-color: #1565C0; /* Changement de couleur au survol */
+}
+
+/* Contenu de l'accordéon */
+.mat-expansion-panel-content {
+  padding: 16px;
+}
+
+/* Boutons "Expand All" et "Collapse All" */
+.exp-action-buttons {
+  margin-bottom: 10px;
+}
+
+/* Style des boutons */
+button.mat-button {
+  margin-right: 10px;
+}
+
+/* Ajoutez des icônes aux boutons si vous le souhaitez */
+button.mat-button mat-icon {
+  margin-right: 5px;
+}
+
+/* Ajoutez un style pour les liens dans le contenu de l'accordéon si nécessaire */
+.mat-expansion-panel-content a {
+  color: #1565C0; /* Couleur du lien */
+  text-decoration: underline;
+}
+
+.mat-expansion-panel-content a:hover {
+  color: #1976D2; /* Changement de couleur au survol du lien */
+}
+
+
+
+/****************/
 
 /*
 .example-action-buttons {

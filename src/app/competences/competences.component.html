@@ -1,8 +1,8 @@
 <section id="competences">
     <div class="ribbon bottom">Compétences</div>
 <mat-form-field>
-    <mat-label></mat-label>
-    <input matInput (keyup)="applyFilter($event)" placeholder="filtre" #input>
+    <mat-label><mat-icon>search</mat-icon></mat-label>
+    <input matInput (keyup)="applyFilter($event)" placeholder="votre recherche" #input>
  </mat-form-field>
   
   <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">

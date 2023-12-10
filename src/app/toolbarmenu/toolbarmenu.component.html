@@ -1,16 +1,50 @@
+
 <p>
-  <mat-toolbar color="primary">
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+  <mat-toolbar color="accent">
+   <!--
+    <button mat-icon-button class="example-icon" aria-label="menu3">
       <mat-icon>menu</mat-icon>
     </button>
+  -->
+    <button mat-button [matMenuTriggerFor]="menu"><mat-icon>menu</mat-icon></button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item routerLink="/home"><mat-icon style="color: white;">home</mat-icon>home</button>
+      <button mat-menu-item  routerLink="/certificats"><mat-icon style="color: white;">approval</mat-icon>Certificats</button>
+      <button mat-menu-item  routerLink="/competences"><mat-icon style="color: white;">build</mat-icon>Compétences</button>
+      <button mat-menu-item  routerLink="/formations"><mat-icon style="color: white;">school</mat-icon>Formations</button>
+      <button mat-menu-item  routerLink="/experiences"><mat-icon style="color: white;">science</mat-icon>Expériences</button>
+      <button mat-menu-item  routerLink="/partners"><mat-icon style="color: white;">handshake</mat-icon>Collaborateurs</button>
+    </mat-menu>
     
-    <span class="example-spacer"></span>
-    <button mat-icon-button class="example-icon"><mat-icon style="color: rgb(222, 23, 23);">home</mat-icon></button>
-    <button mat-icon-button class="example-icon"><mat-icon style="color: white;">approval</mat-icon></button>
-    <button mat-icon-button class="example-icon"><mat-icon style="color: white;">build</mat-icon></button>
-    <button mat-icon-button class="example-icon"><mat-icon style="color: white;">school</mat-icon></button>
-    <button mat-icon-button class="example-icon"><mat-icon style="color: white;">science</mat-icon></button>
-    <button mat-icon-button class="example-icon"><mat-icon style="color: rgb(214, 12, 12);">handshake</mat-icon></button>
+
+
+
+  
+       
+    <a mat-icon-button routerLink="/home" class="example-icon">
+      <mat-icon style="color: white;">home</mat-icon>
+    </a>
+
+    <a mat-icon-button routerLink="/certificats" class="example-icon">
+      <mat-icon style="color: white;">approval</mat-icon>
+    </a>
+
+    <a mat-icon-button routerLink="/competences" class="example-icon">
+      <mat-icon style="color: white;">build</mat-icon>
+    </a>
+
+    <a mat-icon-button routerLink="/formations" class="example-icon">
+      <mat-icon style="color: white;">school</mat-icon>
+    </a>
+
+    <a mat-icon-button routerLink="/experiences" class="example-icon">
+      <mat-icon style="color: white;">science</mat-icon>
+    </a>
+
+    <a mat-icon-button routerLink="/partners" class="example-icon">
+      <mat-icon style="color: white;">handshake</mat-icon>
+    </a>
+    <app-pdf-download></app-pdf-download>
   </mat-toolbar>
 </p>
 

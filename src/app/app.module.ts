@@ -15,12 +15,11 @@ import { CompetencesComponent } from './competences/competences.component';
 import { PdfDownloadComponent } from './pdf-download/pdf-download.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ToolbarmenuComponent } from './toolbarmenu/toolbarmenu.component';
+import { RouterLink, RouterOutlet } from '@angular/router';
 
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [/*AppComponent*/    ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -35,6 +34,7 @@ import { ToolbarmenuComponent } from './toolbarmenu/toolbarmenu.component';
     FormationsComponent,
     CompetencesComponent,
     PdfDownloadComponent,
+    AppComponent,
     ToolbarmenuComponent
 
   ],

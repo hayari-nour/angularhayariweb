@@ -35,8 +35,6 @@ import { Experience } from './experience.model';
   schemas: [CUSTOM_ELEMENTS_SCHEMA],  
 })
 export class ExperienceComponent {
-  //panelOpenState = false;
-  //@ViewChild(MatAccordion) accordion: MatAccordion;
   @ViewChild(MatAccordion) accordion!: MatAccordion;
   experiences: Experience[] = [];
 
@@ -50,22 +48,5 @@ export class ExperienceComponent {
     experience.showDetails = !experience.showDetails;
   }
 
-
-
-
-  experiencesold = [
-    {
-      title: "Développeur web",
-      subtitle: "2022 - Present",
-      content: "Développement de sites web et d'applications web",
-      technologies: ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js']
-    },
-    {
-      title: 'Ingénieur logiciel',
-      subtitle: '2020 - 2022',
-      content: 'Développement de logiciels embarqués',
-      technologies: ['C', 'C++', 'Microcontrôleurs']
-    }
-  ];
 
 }

@@ -2,7 +2,7 @@
 export interface Experience {
     date: string;
     role: string;
-    location: string;
+    lieu: string;
     logoUrl: string;
     description: string;
     tasks: string[];
