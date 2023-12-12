@@ -1,8 +1,8 @@
 <section id="experiences">
   <div class="ribbon bottom">Expériences</div>
 <div class="exp-action-buttons">
-  <button mat-button (click)="accordion.openAll()"><mat-icon style="color: white;">unfold_more_double</mat-icon></button>
-  <button mat-button (click)="accordion.closeAll()"><mat-icon  style="color: white;">compress</mat-icon></button>
+  <button mat-button (click)="accordion.openAll()"><mat-icon style="color: red;">unfold_more_double</mat-icon>Développez tout</button>
+  <button mat-button (click)="accordion.closeAll()"><mat-icon  style="color: blue">compress</mat-icon>Réduire tout</button>
 </div>
 <mat-accordion class="exp-headers-align" multi>
   <mat-expansion-panel  *ngFor="let experience of experiences">
@@ -12,16 +12,18 @@
       </mat-panel-title>
       <mat-panel-description>
         {{ experience.role }}
-        <mat-icon><img [src]="experience.logoUrl" alt="Logo" /></mat-icon>
+        <mat-icon  style="height:40px; width: 40px;"><img [src]="experience.logoUrl" alt="Logo" /></mat-icon>
       </mat-panel-description>
     </mat-expansion-panel-header>
 
     <div *ngIf="experience.showDetails">
       <p>{{ experience.description }}</p>
+      <h6>tâches principales :</h6>
       <ul>
         <li *ngFor="let task of experience.tasks">{{ task }}</li>
       </ul>
-      <p>Environnement technique : {{ experience.technicalEnvironment }}</p>
+      <h6>Environnement technique :</h6>
+      <p>{{ experience.technicalEnvironment }}</p>
     </div>
 
   </mat-expansion-panel>

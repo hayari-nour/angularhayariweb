@@ -18,7 +18,7 @@
     <!-- Formation Column -->
     <ng-container matColumnDef="formation">
       <th mat-header-cell *matHeaderCellDef class="mat-header-cell"> Formation/Diplôme </th>
-      <td mat-cell *matCellDef="let element"  class="mat-cell"> {{element.formation}} </td>
+      <td mat-cell *matCellDef="let element"  class="mat-cell"> <p innerHTML={{element.formation}}></p> </td>
     </ng-container>
   
     <ng-container matColumnDef="lieu">

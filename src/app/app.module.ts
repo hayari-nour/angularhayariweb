@@ -16,6 +16,7 @@ import { PdfDownloadComponent } from './pdf-download/pdf-download.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ToolbarmenuComponent } from './toolbarmenu/toolbarmenu.component';
 import { RouterLink, RouterOutlet } from '@angular/router';
+import { LocationStrategy, PathLocationStrategy } from '@angular/common';
 
 
 @NgModule({
@@ -38,7 +39,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
     ToolbarmenuComponent
 
   ],
-  providers: [],
+  providers: [ { provide: LocationStrategy, useClass: PathLocationStrategy }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

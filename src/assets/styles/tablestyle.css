@@ -1,6 +1,7 @@
 table.mat-elevation-z8 th.mat-header-cell {
-    background-color:rgb(0, 0, 0);
+    background: linear-gradient(to bottom, black,#49d3af, #4ebd9a,silver);
     color:  white;
+    font-weight: bold;
   }
 
  table.mat-elevation-z8 tr.mat-header-row {
@@ -22,6 +23,8 @@ table.mat-elevation-z8 td.mat-header-cell {
 
 
 
+
+
   
 
 
@@ -36,7 +39,8 @@ table.mat-elevation-z8 td.mat-header-cell {
   }
   .ribbon {
     --r: .8em; /* control the cutout */
-    border-block: .5em solid #0000;
+    /*border-block: .5em solid #0000;*/
+    border-block: 0.2em solid #baf7e0;
     padding-inline: .5em calc(var(--r) + .25em);
     line-height: 1.8;
     clip-path: polygon(100% 0,0 0,0 100%,100% 100%,calc(100% - var(--r)) calc(100% - .25em),100% 50%,calc(100% - var(--r)) .25em);

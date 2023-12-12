@@ -9,6 +9,12 @@
 .exp-headers-align .mat-expansion-panel-header-description {
   justify-content: space-between;
   align-items: left;
+  /*background-color: rgb(210, 21, 21); */
+}
+
+.exp-headers-align .mat-expansion-panel-header {
+  /*background-color: silver; */
+  background: linear-gradient(to bottom, black,#49d3af, #4ebd9a,silver);
 }
 
 .exp-headers-align .mat-mdc-form-field + .mat-mdc-form-field {
@@ -18,9 +24,9 @@
 
 /* experience.component.css */
 img {
-  width: 30px; /* Ajustez selon vos besoins */
-  height: 30px; /* Ajustez selon vos besoins */
-  margin-right: 10px; /* Ajustez selon vos besoins */
+  width: 35px;
+  height: auto;
+ /* margin-right: 30%; */
 }
 
 div {
@@ -32,10 +38,28 @@ div span {
   font-weight: bold;
 }
 
-div p {
-  margin-top: 5px; /* Ajustez selon vos besoins */
+h6 {
+  font-size: small;
+  font-weight: bold;
+  background-color: rgb(115, 119, 119);
+  color: #fff;
+
 }
 
+div p {
+  margin-top: 5px; /* Ajustez selon vos besoins */
+  color: blue;
+}
+
+div ul {
+    color: rgb(0, 0, 0);
+}
+li {
+
+  background-color: #fff;
+}
+
+li:nth-child(odd) { background-color:silver; }
 
 
 /*** chatgpt****/
@@ -81,6 +105,7 @@ button.mat-button {
 /* Ajoutez des icônes aux boutons si vous le souhaitez */
 button.mat-button mat-icon {
   margin-right: 5px;
+
 }
 
 /* Ajoutez un style pour les liens dans le contenu de l'accordéon si nécessaire */
