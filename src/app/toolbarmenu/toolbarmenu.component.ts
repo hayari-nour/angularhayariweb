@@ -11,8 +11,17 @@ import { PdfDownloadComponent } from '../pdf-download/pdf-download.component';
   standalone:true,
   templateUrl: './toolbarmenu.component.html',
   styleUrls: ['./toolbarmenu.component.css'],
-  imports: [RouterLink, MatToolbarModule, MatButtonModule, MatIconModule, MatMenuModule,PdfDownloadComponent],
+  imports: [RouterLink, MatToolbarModule, MatButtonModule, MatIconModule, MatMenuModule/*,PdfDownloadComponent*/],
 })
 export class ToolbarmenuComponent {
 
+  // Dans votre composant ou dans un fichier de service
+  /*
+scrollToSection(sectionId: string) {
+  const section = document.getElementById(sectionId);
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+*/
 }

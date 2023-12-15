@@ -1,3 +1,15 @@
+/*
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  vertical-align: middle;
+  z-index: 1;
+}*/
+
 .toolbarm-spacer {
     flex: 1 1 auto;
   }
@@ -5,6 +17,8 @@
   
 
   .mat-toolbar{
+    height : 3vh; 
+    min-height: 3vw; 
     display: -ms-flexbox;
     background: rgb(141, 170, 228);
     justify-content: center;

@@ -17,8 +17,7 @@ const routes: Routes = [
 { path: 'certificats', component: CertificatsComponent },
 { path: 'partners', component: PartnersComponent },
 { path: '', redirectTo: '/home', pathMatch: 'full' }, 
-{ path: '**', redirectTo: '/home' } 
-];
+{ path: '**', redirectTo: '/home' }];
 
 @NgModule({
   imports: [
