@@ -11,6 +11,7 @@ import { CertificatsComponent } from './certificats/certificats.component';
 import { FormationsComponent } from './formations/formations.component';
 import { CompetencesComponent } from './competences/competences.component';
 import { ExperienceComponent } from './experiences/experiences.component';
+import { PdfDownloadComponent } from './pdf-download/pdf-download.component';
 
 
 @Component({
@@ -18,7 +19,7 @@ import { ExperienceComponent } from './experiences/experiences.component';
   standalone:true, 
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  imports: [RouterModule,RouterLink, RouterOutlet,ToolbarmenuComponent,FooterComponent/*,HomeComponent,
+  imports: [RouterModule,RouterLink, RouterOutlet,ToolbarmenuComponent,FooterComponent,PdfDownloadComponent /*,HomeComponent,
 PartnersComponent, CertificatsComponent, FormationsComponent, CompetencesComponent,ExperienceComponent*/],
 })
 export class AppComponent {

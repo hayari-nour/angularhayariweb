@@ -1,4 +1,4 @@
-
+<!--<header class="header">-->
   <mat-toolbar color="accent">
     <button mat-button [matMenuTriggerFor]="menu"><mat-icon>menu</mat-icon></button>
     <mat-menu #menu="matMenu">
@@ -8,6 +8,7 @@
       <button mat-menu-item  routerLink="/formations"><mat-icon style="color: white;">school</mat-icon>Formations</button>
       <button mat-menu-item  routerLink="/experiences"><mat-icon style="color: white;">science</mat-icon>Expériences</button>
       <button mat-menu-item  routerLink="/partners"><mat-icon style="color: white;">handshake</mat-icon>Collaborateurs</button>
+      <button mat-menu-item  routerLink="/downloads"><mat-icon style="color: white;">upload_file</mat-icon>Documents</button>
     </mat-menu>
            
 
@@ -35,7 +36,10 @@
     <a mat-icon-button routerLink="/partners">
       <mat-icon style="color: white;">handshake</mat-icon>
     </a>
+    <a mat-icon-button routerLink="/partners">
+      <mat-icon style="color: white;">upload_file</mat-icon>
+    </a>
   <!--   <app-pdf-download></app-pdf-download> -->
-   
+  
   </mat-toolbar>
-
+<!--</header>-->

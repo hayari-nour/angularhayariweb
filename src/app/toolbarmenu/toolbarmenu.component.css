@@ -1,33 +1,30 @@
-/*
+
 .header {
   position: fixed;
   left: 0;
   top: 0;
+  height : 10%; 
+  min-height: 10%;
   width: 100%;
-  color: rgb(255, 255, 255);
   text-align: center;
   vertical-align: middle;
-  z-index: 1;
-}*/
-
+  background: yellowgreen;
+}
+/*
 .toolbarm-spacer {
     flex: 1 1 auto;
-  }
+  }*/
 
   
 
   .mat-toolbar{
-    height : 3vh; 
-    min-height: 3vw; 
+    /*height : 5%; 
+    min-height: 5%;*/
+    width: 100%;
     display: -ms-flexbox;
     background: rgb(141, 170, 228);
     justify-content: center;
-    
-  
-    /*background:  #45ADA8 ; */
     background: linear-gradient(to bottom, #45ADA8,#45ADA8,#4ac0a0, #86e6c8, #baf7e0);
-   
-
   } 
 
 

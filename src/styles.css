@@ -12,13 +12,10 @@
 
     margin: 0;
    /*padding: 30px;*/
-   padding-left: 30px;
-   padding-right: 30px;
+   padding-left: 3%;
+   padding-right: 3%;
    padding-top: 0;
    padding-bottom: 0;
-
-
-
     background-color: #87CEEB; 
     color: #F5F5DC; 
   }
@@ -26,3 +23,13 @@
   html, body {
     height: 100%;
   }
+
+ .principal-container {
+  /*calc(100vh-5vh-3vh);*/
+    /*height: 90%;
+    min-height: 90%;
+    */
+    height : 85%; 
+    min-height: 85%; 
+
+ }

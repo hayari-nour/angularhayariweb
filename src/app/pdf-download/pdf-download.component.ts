@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input  } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import {MatIconModule} from '@angular/material/icon';
 import { MatIconRegistry } from "@angular/material/icon";
@@ -12,24 +12,13 @@ import { DomSanitizer } from '@angular/platform-browser';
   styleUrls: ['./pdf-download.component.css']
 })
 export class PdfDownloadComponent {
-
+  @Input() fileName: string = ''; // Propriété pour stocker le nom du fichier
   
   constructor(private http: HttpClient) {}
-    /*constructor(private http: HttpClient,
-      private matIconRegistry: MatIconRegistry,
-      private domSanitizer: DomSanitizer) {
-      this.matIconRegistry.addSvgIcon(
-        "download",
-        this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/images/downloadfile.svg")
-      );
-    }*/
- 
-
-
 
 
   downloadPdf() {
-    const pdfUrl = '/assets/cv_hayari.pdf'; // Remplacez 'fichier.pdf' par le nom de votre fichier
+    const pdfUrl = `./assets/${this.fileName}`;  // Remplacez 'fichier.pdf' par le nom de votre fichier
     this.http.get(pdfUrl, { responseType: 'arraybuffer' }).subscribe((data) => {
       this.savePdf(data, 'fichier.pdf');
     });
@@ -46,4 +35,13 @@ export class PdfDownloadComponent {
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
   }
+
+
+
+
+
+
+
+
+
 }
